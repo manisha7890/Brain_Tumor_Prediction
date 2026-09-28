@@ -1,0 +1,156 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="row">
+  <div class="col-md-12 col-sm-4 col-xs-12">
+    <div class="container animate__animated animate__fadeInUpBig">
+      <div class="row row-cols-1 row-cols-md-6 g-4" style="padding-bottom: 3%;padding-top: 3%;">
+
+        <div class="col">
+          <div class="card h-100 text-center mx-auto" style="width: 40rem;">
+
+            <div class="card-body">
+              <h4 class="card-title">Upload Image</h4>
+              <form id="upload-file" method="post" enctype="multipart/form-data">
+                <label for="imageUpload" class="upload-label"> Choose... </label>
+                <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+              </form>
+            </div>
+            <div style="display: block; margin: auto; width: 50%; padding:10px;">
+              <div class="card-footer">
+                <div class="image-section" style="display: none;">
+                  <div class="img-preview">
+                    <div id="imagePreview"></div>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-primary btn-lg" id="btn-predict">Predict!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-sm-4 col-xs-12">
+    <div class="container animate__animated animate__fadeInUpBig">
+      <div class="row row-cols-1 row-cols-md-6 g-4" style="padding-bottom: 2%;padding-top: 2%;">
+
+        <div class="col">
+          <div class="card h-100 text-center mx-auto" style="width: 100%;">
+
+            <div class="card-body">
+              <div class="sub">
+                <div class="Probability">
+                  <h2><b><u>Prediction Probability:</u></b></h2>
+                  <h3>Glioma :: <span id="glioma"></span></h3>
+                  <h3>Meningioma :: <span id="meningioma"></span></h3>
+                  <h3>No Tumor :: <span id="notumor"></span></h3>
+                  <h3>Pituitary :: <span id="pituitary"></span></h3>
+                </div>
+              </div>
+              <div class="sub">
+                <div class="loader" style="display: none"></div>
+                <h3 id="result"><span id="ans"> </span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Doctor Recommendation Section -->
+  <div class="container animate__animated animate__fadeInUpBig">
+    <div class="row row-cols-1 row-cols-md-2 g-4" style="padding-bottom: 3%; padding-top: 2%;">
+      <div class="col-12">
+        <div class="card h-100 text-center mx-auto" style="width: 100%;">
+          <div class="card-body">
+            <h3 class="card-title"><b><u>Doctor Recommendations</u></b></h3>
+            <div class="row">
+
+      <!-- Doctor 1 -->
+<div class="col-md-6 mb-3">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Pravin Tukaram Survashe</h5>
+      <p class="card-text">
+        Neurosurgeon<br>
+        Manipal Hospitals, Pune<br>
+        Contact: +91 20 7129 0129<br>
+        Website: <a href="https://www.manipalhospitals.com/kharadi/doctors/dr-pravin-tukaram-survashe-consultant-neurosurgery/" target="_blank">Visit Profile</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Doctor 2 -->
+<div class="col-md-6 mb-3">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Vishal Rokade</h5>
+      <p class="card-text">
+        Brain & Spine Surgeon<br>
+        CNS Clinic, Pune<br>
+        Email: drvishalrokade@gmail.com<br>
+        Website: <a href="https://cnsclinicindia.com/" target="_blank">Visit Profile</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Doctor 3 -->
+<div class="col-md-6 mb-3">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Tushar Borde</h5>
+      <p class="card-text">
+        Neuro Specialist<br>
+        Borde Clinic, Pune<br>
+        Contact: +91 84689 34960<br>
+        Website: <a href="https://www.bordeclinicpune.com/dr-tushar-borde/" target="_blank">Visit Profile</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Doctor 4 -->
+<div class="col-md-6 mb-3">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Anant Bhushan Ranade</h5>
+      <p class="card-text">
+        Oncologist (Brain Tumor Specialist)<br>
+        Seth Ramdas Shah Memorial Hospital, Pune<br>
+        Website: <a href="https://www.365doctor.in/pune/brain-tumor-surgery-in-shivaji-nagar" target="_blank">Visit Profile</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Doctor 5 -->
+<div class="col-md-6 mb-3">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Shona Milon Nag</h5>
+      <p class="card-text">
+        Oncologist<br>
+        KEM Hospital, Pune<br>
+        Website: <a href="https://www.365doctor.in/pune/brain-tumor-surgery-in-shivaji-nagar" target="_blank">Visit Profile</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

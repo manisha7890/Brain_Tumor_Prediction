@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <title>Brain Tumor Prediction</title>
+
+</head>
+
+<body class="animate__animated animate__fadeIn">
+  <!-- Navbar -->
+  <nav class="navbar navbar-light" style="background-color: grey;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 mx-auto name">Design and Development of CNN based Deep Learning Model For Brain Tumor Prediction</span>
+      <form class="d-flex">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Home
+            </button>
+            <!-- Modal -->
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="text-center">
+
+      <small class="text-muted" style="color: white !important;">
+      </small>
+    </div>
+  </div>
+
+
+  <!-- Disease Cards -->
+  <div class="container animate__animated animate__fadeInUpBig">
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-bottom: 3%;padding-top: 3%;">
+
+
+      <div class="col">
+        <div class="card h-100 text-center mx-auto" style="width: 40rem;">
+          <img class="card-img-top img-fluid" src="../static/img/braintumour.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Brain Tumor Prediction</h4>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-success" href="{{ url_for('brain') }}">Check</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+    <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title">
+            <h2 class="head-title lg-line">Our<br>Ultimate Dream</h2>
+            <hr class="botm-line">
+            <p class="sec-para" align="justify">The goal is to develop advanced app that assists
+              doctors in accurately identifying tumors.
+              This app will help streamline the diagnostic process, ultimately saving patients valuable
+              time by offering quick and precise results. Additionally, the tool aims to provide doctors with
+              the necessary resources to detect tumors in their early stages, increasing the likelihood of successful treatment.
+             </p>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-4 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-12 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>It's something important you want to know.</h3>
+                <p align="justify">We additionally suggest it would be prudent to start a conversation with your doctor.
+                  If you need help we strongly suggest that you reach out to to a qualified health professional listed in our
+                  directory of emergency brain health resources.</p>
+              </div>
+            </div>
+            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>What Is Brain Tumor?</h3>
+                <p align="justify">A brain tumor is an abnormal growth or mass of
+                  cells in or around the brain, which can be either benign (non-cancerous) or malignant (cancerous),
+                  and can impact brain function if it grows large enough. </p>
+              </div>
+            </div>
+
+          </div>
+         <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title">
+            <h2 class="head-title lg-line">Our<br>Motivation</h2>
+            <hr class="botm-line">
+            <p class="sec-para" align="justify">The main motivation behind Brain tumor detection is to not only detect tumor but it can also classify types of tumor. So it can be useful in cases such as we have to sure the tumor is positive or negative, it can detect tumor from image and return the result tumor is positive or not. This project deals with such a system, which uses computer, based procedures to detect tumor blocks and classify the type of tumor using Convolution Neural Network Algorithm for MRI images of different patients.</p>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="cta-2" class="section-padding">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-2"></div>
+        <div class="text-right-md col-md-4 col-sm-4">
+          <h2 class="section-title white lg-line">About us</h2>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <h4 class="text-primary">Developed By</h4>
+          <ol type="1" style="color:white">
+            <li>Manisha Lokhande</li>
+
+             
+
+
+          </ol>
+
+          <p class="text-primary"><i>AMIE</i></p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <!-- JS -->
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src="../static/script.js"></script>
+</body>
+
+</html>
